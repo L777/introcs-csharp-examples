@@ -22,27 +22,32 @@ namespace IntroCS
          StreamWriter writer = new StreamWriter (categories_name);
          StreamWriter writer2 = new StreamWriter (students_name);
 
-         writer.Close ();
-         writer2.Close ();
 
-         string pathToCatFile = GetPath (categories_name);
-         string pathToStudentFile = GetPath (students_name);
+
+         string pathToCatFile = LocatePathToFile (categories_name);
+         string pathToStudentFile = LocatePathToFile (students_name);
 
          Console.WriteLine (pathToCatFile);
          Console.WriteLine (pathToStudentFile);
 
+         writer.WriteLine ("Exam, Lab, Homework, Project, Class Participation");
+         writer.WriteLine ("40, 15, 15, 20, 10");
+         writer.WriteLine ("2, 5, 3, 1, 2");
+
+         writer2.WriteLine ("P12345678, Doe, John");
+         writer2.WriteLine ("P00000001, Hernandez, Maria");
+        
+         writer.Close ();
+         writer2.Close ();
 
 
 
       }
 
 
-         /// Find a directory containing the filename
-         /// and return the full file path, if it exists. 
-         /// Otherwise return null.
-         public static string GetPath(string filename)
+         public static string LocatePathToFile(string filename)
          {
-          string[] paths = { ".", "..", Path.Combine("..", "..") };
+          string[] paths = { ".", "..", Path.Combine("..", "..") }; //added th path
 
             foreach (string dir in paths) {
                string filePath = Path.Combine(dir, filename);

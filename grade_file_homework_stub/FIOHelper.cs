@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace grade_file_homework_stub
+namespace IntroCS
 {
    public class FIOTest
    {
