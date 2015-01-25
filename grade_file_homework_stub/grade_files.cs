@@ -14,12 +14,23 @@ namespace IntroCS
          string abreviation=Console.ReadLine();
 
                 // creates the two master files name as a string values // we will use these values during files creation
-         string categories_name=("Categories"+abrr+".txt");
-         string students_name=("Students"+abrr+".txt");
+         string categories_name=("Categories_"+abreviation+".txt");
+         string students_name=("Students_"+abreviation+".txt");
+         Console.WriteLine (categories_name + "\n " + students_name);
+         /*
 
-
-
-
+         /// Find a directory containing the filename
+         /// and return the full file path, if it exists. 
+         /// Otherwise return null.
+         public static string GetPath(string filename)
+         {
+            foreach (string dir in paths) {
+               string filePath = Path.Combine(dir, filename);
+               if (File.Exists(filePath))
+                  return filePath;
+            }
+            return null;
+         }
 
 
          // TEMPORARY line to get oriented to the file system:
@@ -38,5 +49,8 @@ namespace IntroCS
          }
          return -1; //required by compiler: shouldn't reach
       }
-   }                                   // end codeIndex chunk
+   }  
+   // end codeIndex chunk
+   */
 }
+}}
