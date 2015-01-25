@@ -14,9 +14,11 @@ namespace IntroCS
          string abreviation=Console.ReadLine();
 
                 // creates the two master files name as a string values // we will use these values during files creation
-         string categories_name=("Categories_"+abreviation+".txt");
-         string students_name=("Students_"+abreviation+".txt");
-         Console.WriteLine (categories_name + "\n " + students_name);
+         string categories_name=("categories_"+abreviation+".txt");
+         string students_name=("students_"+abreviation+".txt");
+     //    Console.WriteLine (categories_name + "\n " + students_name);
+
+
          /*
 
          /// Find a directory containing the filename
