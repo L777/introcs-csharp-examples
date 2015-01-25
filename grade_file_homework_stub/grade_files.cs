@@ -9,8 +9,21 @@ namespace IntroCS
       /// on the command line, or provided interactively.
       public static void Main(string[] args)
       {
+         //18.7.3:  - prompt course abreviation from the user
+         Console.WriteLine ("Enter course abreviation(e.g.Comp150,Comp170 etc): ");
+         string abreviation=Console.ReadLine();
+
+                // creates the two master files name as a string values // we will use these values during files creation
+         string categories_name=("Categories"+abrr+".txt");
+         string students_name=("Students"+abrr+".txt");
+
+
+
+
+
+
          // TEMPORARY line to get oriented to the file system:
-         Console.WriteLine("Current directory: " + 
+         Console.WriteLine("Current directory: " +
                            Directory.GetCurrentDirectory());
       }
                                            // codeIndex chunk                                          
